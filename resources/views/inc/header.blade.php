@@ -1,6 +1,6 @@
 <div class="container-fluid d-flex w-100 pt-3 pb-3 mx-auto flex-column" style="padding-left: 0px; padding-right: 0px;">
 <header class="masthead mb-auto mb-top">
-    <h2 class="masthead-brand">isezo .inc</h2>
+    <a href="/" class="masthead-brand">isezo .inc</a>
     <nav class="nav nav-masthead justify-content-rigth">
       <a class="nav-link" href="/">Выбор города</a>
       <a class="nav-link active" href="/">Соискателям</a>
