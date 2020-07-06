@@ -1,3 +1,10 @@
+@extends('layouts.index')
+
+@section('title-block')
+Поиск работы
+@endsection
+
+@section('content')
 <main role="main" class="mt-5">
   <div class="container-fluid" id="img">
     <div class="col-lg-ofsset-2" style= "padding-top:7%;">
@@ -24,3 +31,4 @@
       </div>
     </div>
   </main>
+@endsection

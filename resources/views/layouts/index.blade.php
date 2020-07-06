@@ -10,7 +10,7 @@
 </head>
 <body>
   @include('inc.header')
-  @include('inc.main')
+  @yield('content')
 </div>
 </body>
 </html>
