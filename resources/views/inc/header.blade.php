@@ -1,10 +1,22 @@
-<nav class="site-header sticky-top py-1" style="background-color: black;">
-  <div class="container d-flex flex-row">
-    <a class="py-1" href="#" aria-label="Product">
-     <img src="images/logo.png" height="80px">
-    </a>
-    <a class="py-1 d-none d-md-inline-block ml-3 align-self-center font-weight-bold text-white h5" style="font-family: 'Nunito', sans-serif;" href="#">Меню</a>
-    <a class="py-1 d-none d-md-inline-block ml-3 align-self-center font-weight-bold text-white h5" style="font-family: 'Nunito', sans-serif;" href="#">Еще что-то</a>
-    <a class="py-1 d-none d-md-inline-block ml-3 align-self-center text-white font-weight-bold h5" style="font-family: 'Nunito', sans-serif;" href="#">И еще что-то</a>
-  </div>
-</nav>
+<div class="container-fluid d-flex w-100 pt-3 pb-3 mx-auto flex-column" style="padding-left: 0px; padding-right: 0px;">
+<header class="masthead mb-auto mb-top">
+    <h2 class="masthead-brand">isezo .inc</h2>
+    <nav class="nav nav-masthead justify-content-rigth">
+      <a class="nav-link" href="/">Выбор города</a>
+      <a class="nav-link active" href="/">Соискателям</a>
+      <a class="nav-link" href="#">Работодателям</a>
+      <a class="nav-link" href="#">Создать резюме</a>
+    </nav>
+
+    <div class="navbar-collapse collapse">
+      <form class="navbar-form navbar-right" method="post">
+        <div class="form-group">
+          <input type="text" placeholder="Логин" class="form-control" name="login">
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Пароль" class="form-control" name="password">
+        </div>
+        <button type="submit" class="btn btn-success" name="button">Вход</button>
+      </form>
+    </div>
+</header>

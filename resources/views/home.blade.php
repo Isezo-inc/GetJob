@@ -1,14 +1,5 @@
-@extends('layouts.app')
-
-@section('title')
-Доставка шаурмы бесплатно
-@endsection
-
+@extends('layouts.index')
+@section('title-block')Главная страница @endsection
 @section('content')
-<form action="menu" method="post">
-<div class="form-group">
-	<label for="name">Слыш свое имя быстро сказал!</label>
-	<input type="text" name="name"/>
-</div>
-</form>
+<h1>бла бла бла</h1>
 @endsection
