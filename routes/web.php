@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('main');
+    return view('staffer.main_staffer');
+})->name('startpage');
+
+Route::get('/employer', function () {
+    return view('employer.main_employer');
 })->name('startpage');

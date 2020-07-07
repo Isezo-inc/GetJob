@@ -14,9 +14,6 @@ html,
 body {
   height: 100%;
   background-color: #fff;
-}
-
-body {
   display: -ms-flexbox;
   color: #bf2e1a;
   /*text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);*/
@@ -85,7 +82,7 @@ body {
 }
 
 #create_job {
-  background: url(https://image.freepik.com/free-vector/_1017-11511.jpg) no-repeat center top;
+  /*background: url(https://image.freepik.com/free-vector/_1017-11511.jpg) no-repeat center top;*/
   margin-top: -10px;
   padding-right: 10%;
   text-align: right;
@@ -104,7 +101,7 @@ body {
   text-align: center;
   background-attachment: relative;
   background-position: center center;
-  min-height: 700px;
+  min-height: 400px;
   width: 100%;
   background-size: 100%;
 }

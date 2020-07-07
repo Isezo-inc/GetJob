@@ -3,8 +3,8 @@
     <a href="/" class="masthead-brand">isezo .inc</a>
     <nav class="nav nav-masthead justify-content-rigth">
       <a class="nav-link" href="/">Выбор города</a>
-      <a class="nav-link active" href="/">Соискателям</a>
-      <a class="nav-link" href="#">Работодателям</a>
+      <a class="nav-link" href="/">Соискателям</a>
+      <a class="nav-link active" href="#">Работодателям</a>
       <a class="nav-link" href="#">Создать резюме</a>
     </nav>
 
