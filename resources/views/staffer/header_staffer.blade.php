@@ -1,11 +1,10 @@
-<div class="container-fluid d-flex w-100 pt-3 pb-3 mx-auto flex-column" style="padding-left: 0px; padding-right: 0px;">
+<div class="container-fluid d-flex pt-3 flex-column">
 <header class="masthead mb-auto mb-top">
     <a href="/" class="masthead-brand">isezo .inc</a>
     <nav class="nav nav-masthead justify-content-rigth">
-      <a class="nav-link" href="/">Выбор города</a>
       <a class="nav-link active" href="/">Соискателям</a>
       <a class="nav-link" href="/employer">Работодателям</a>
-      <a class="nav-link" href="#">Создать резюме</a>
+      <a class="nav-link" data-toggle="collapse" data-target="#window">Войти</a>
     </nav>
 
     <div class="navbar-collapse collapse">

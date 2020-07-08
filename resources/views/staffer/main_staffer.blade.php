@@ -15,9 +15,13 @@
 @section('content')
   @include('staffer.header_staffer')
   <main role="main" class="mt-5">
+    <div class="container-fluid" id="create_job">
+        <h1 class="text-success" style="font-size:82px;">Black lives matter</h1>
+          <button type="button" name="button" class="btn btn-danger btn-lg btn-cr">Создать резюме</button>
+    </div>
     <div class="container-fluid" id="img">
-      <div class="col-lg-ofsset-2" style= "padding-top:7%;">
-        <h1 class="text-info">Найти работу просто</h1>
+      <div class="col-lg-ofsset-2">
+        <h1 class="text">Найти работу просто</h1>
         <form class="" action="#" method="post">
           <div class="container-fluid">
             <div class="form-inline">
@@ -31,14 +35,11 @@
         <input type="text" class="form-control" placeholder="опыт" name="experience" value="">
         <input type="text" class="form-control" placeholder="Должность" name="job" value="">
     </div>
-
-          </div>
-          <button type="button" name="button" class="btn-info btn-lg">Найти</button>
+        </div>
+          <button type="button" name="button" class="btn btn-danger btn-lg">Найти</button>
         </form>
       </div>
-
         <div class="container">
-
         </div>
       </div>
     </main>
