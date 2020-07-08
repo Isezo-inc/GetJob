@@ -1,0 +1,82 @@
+#window {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.3);
+}
+
+a {
+  cursor: pointer;
+}
+
+.btn {
+  border-radius: 100px;
+}
+
+.btn-cr {
+  font-size: 2rem;
+}
+
+.input-group > .form-control:not(:first-child) {
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.form-control {
+  border-radius: 100px;
+  border: 1px solid #17a2b8;
+  font-size: 1.5rem;
+}
+
+.input-group {
+  width: 90%;
+  padding-bottom: 4%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.C10 {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 30%;
+}
+
+.C11 {
+  height: 100%;
+  width: 40%;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+}
+
+/*.C12{
+  position: sticky;
+  top: 0;
+  left: 100%;
+  bottom: 0;
+  //background: url(https://st.depositphotos.com/1734074/3308/v/450/depositphotos_33083835-stock-illustration-%D0%B7%D0%B0%D0%BA%D1%80%D1%8B%D1%82%D1%8C-icon-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D1%8B%D0%B9.jpg) no-repeat right top;
+  min-height: 5%;
+  width: 5%;
+  background-size: 100%;
+}*/
+
+.C13 {
+  position: fixed;
+  top: 30%;
+  width: inherit;
+  background-color: #fff;
+  -moz-text-align-last: center;
+       text-align-last: center;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #17a2b8;
+}
+

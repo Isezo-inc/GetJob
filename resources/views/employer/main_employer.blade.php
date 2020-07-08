@@ -14,18 +14,18 @@
 
 @section('content')
   @include('employer.header_employer')
-  <main role="main" class="mt-5">
+  <main role="main" class="mt-2">
     <div class="container-fluid" id="create_job">
 
-      <div class="col-lg-ofsset-2" style= "padding-top:7%;">
-        <h1 class="text-info">/*текст для кнопки*/</h1>
-          <button type="button" name="button" class="btn-info btn-lg">Создать вакансию</button>
+      <div class="col-lg-ofsset-2" style= "padding-top:4%;">
+        <h1 class="text-success" style="font-size:82px;">Black lives matter</h1>
+          <button type="button" name="button" class="btn btn-info btn-lg btn-cr">Создать вакансию</button>
         </form>
       </div>
 
     </div>
     <div class="container-fluid" id="img">
-      <div class="col-lg-ofsset-2" style= "padding-top:7%;">
+      <div class="col-lg-ofsset-2" style= "padding-top:4%;">
         <h1 class="text-info">Поиск резюме</h1>
         <form class="" action="#" method="post">
           <div class="container-fluid">
@@ -42,7 +42,7 @@
     </div>
 
           </div>
-          <button type="button" name="button" class="btn-info btn-lg">Найти</button>
+          <button type="button" name="button" class="btn btn-info btn-lg">Найти</button>
         </form>
       </div>
 

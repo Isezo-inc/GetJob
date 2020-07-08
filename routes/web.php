@@ -17,4 +17,8 @@ Route::get('/', function () {
 
 Route::get('/employer', function () {
     return view('employer.main_employer');
-})->name('startpage');
+})->name('employer');
+
+Route::get('/reg', function () {
+    return view('reg');
+})->name('registration');
