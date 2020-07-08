@@ -25,15 +25,15 @@
           </div>
 
           <div class="input-group">
-            <button type="submit" name="autent" class="btn btn-primary btn-block btn-lg">Войти</button>
+            <button type="submit" class="btn btn-primary btn-block btn-lg">Войти</button>
           </div>
           <div class="input-group">
-            <button type="submit" name="autent" class="btn btn-link btn-block">Напомнить пароль</button>
+            <button type="submit" class="btn btn-link btn-block">Напомнить пароль</button>
           </div><br>
 
           <div class="input-inline">
-            <button type="button" name="autent" class="btn btn-outline-danger">Зарегистрироваться для поиска работы</button>
-            <button type="button" name="autent" class="btn btn-outline-info">Зарегистрироваться для поиска сотрудника</button>
+            <a href="/reg_staffer" class="btn btn-outline-danger">Зарегистрироваться для поиска работы</a>
+            <a href="/reg_employer" class="btn btn-outline-info">Зарегистрироваться для поиска сотрудника</a>
           </div>
        </form>
     </div>

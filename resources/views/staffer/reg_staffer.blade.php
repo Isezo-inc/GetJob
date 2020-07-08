@@ -1,5 +1,5 @@
 @extends('reg')
-@section('title-block')Регистрация работодателя@endsection
+@section('title-block')Регистрация для поиска работы@endsection
 @section('hello_text')Приветственный, завлекающий текст@endsection
 @section('save_form')
 <form action = "save.blade.php" method="post">
@@ -23,17 +23,11 @@
     <div class="input-group">
       <input type="tel" placeholder="Телефон" data-qa="employer-registration-phone-phoneFull" name="phoneFull" class="form-control">
     </div>
-  </div>
-  <div class="input-group">
-    <h4>Блок 3</h4>
-    <div class="input-group">
-      <input type="text" placeholder="Название компании" data-qa="employer-registration-company-name" name="companyName" value="" class="form-control">
-    </div>
     <div class="input-group">
       <input type="text" data-qa="auth-employer__city-input" data-gaformstatistic-name="areaId" placeholder="Город" autocomplete="off" value="" class="form-control">
     </div>
     <div class="input-group">
-      <input type="submit" value="Зарегистрироваться" class="btn btn-info btn-lg">
+      <input type="submit" value="Зарегистрироваться" class="btn btn-danger btn-lg">
     </div>
   </div>
 </form>
