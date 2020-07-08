@@ -1,4 +1,4 @@
-@extends('reg')
+@extends('layouts.layout_reg')
 @section('title-block')Регистрация для поиска работы@endsection
 @section('hello_text')Приветственный, завлекающий текст@endsection
 @section('save_form')

@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.layout_main_window')
 
 @section('title-block')Поиск сотрудника@endsection
 

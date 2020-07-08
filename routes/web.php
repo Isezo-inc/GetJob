@@ -2,7 +2,7 @@
 
 Route::get('/', function () {
     return view('staffer.main_staffer');
-})->name('startpage');
+})->name('staffer');
 
 Route::get('/reg_staffer', function () {
     return view('staffer.reg_staffer');
