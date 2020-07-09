@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-function showpass(target) {
+window.showpass = function () {
   var input = document.getElementById('passinput');
 
   if (input.getAttribute('type') == 'password') {
@@ -103,7 +103,7 @@ function showpass(target) {
   }
 
   return false;
-}
+};
 
 /***/ }),
 
@@ -114,7 +114,7 @@ function showpass(target) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Victor\Documents\GitHub\slavic-vitec\resources\js\staffer.js */"./resources/js/staffer.js");
+module.exports = __webpack_require__(/*! C:\Users\isezo\Documents\GitHub\slavic-vitec\resources\js\staffer.js */"./resources/js/staffer.js");
 
 
 /***/ })

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel = "stylesheet" href="/css/registration.css">
-<script src="/js/staffer.js"></script>
+  <script type="text/javascript" src="{{mix('js/staffer.js')}}"></script>
   <title>@yield('title-block')</title>
 </head>
 <body style="background-attachment: fixed; background-image: linear-gradient(to left top, #17a2b8, #4ab8b1, #80cba7, #b7dba2, #eee8a9);">

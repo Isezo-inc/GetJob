@@ -10,9 +10,9 @@
   </div>
   <div class="form-group">
     <label for="passinput">Пароль</label>
-    <input type="password" class="form-control" id="passinput" name="password" placeholder="Пароль">
+    <input type="password" class="form-control" id="passinput" name="passinput" placeholder="Пароль">
   </div>
-  <a href="#" onclick="return showpass(this);">Показать п</a>
+  <button type="button" name="button" onclick="return showpass();">Показать пароль</button>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 @endsection

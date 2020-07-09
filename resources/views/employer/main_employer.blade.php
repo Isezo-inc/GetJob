@@ -4,7 +4,7 @@
 
 @section('style')<link rel = "stylesheet" href="/css/employer.css">@endsection
 
-@section('head')@include('employer.header_employer')@endsection
+@section('head')@include('employer.header_new_employer')@endsection
 
 @section('button_block1')<button type="button" name="button" class="btn btn-info btn-lg btn-cr">Создать вакансию</button>@endsection
 

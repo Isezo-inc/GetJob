@@ -1,4 +1,4 @@
-function showpass(target) {
+window.showpass = function () {
   var input = document.getElementById('passinput');
 	if (input.getAttribute('type') == 'password') {
 		input.setAttribute('type', 'text');

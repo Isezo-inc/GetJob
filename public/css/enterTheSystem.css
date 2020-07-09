@@ -53,6 +53,14 @@ body {
   max-width: 42em;
 }
 
+.dropdown-menu-right {
+  right: 16.4%;
+}
+
+.dropdown-menu {
+  top: 7.4%;
+}
+
 .input-group > .form-control:not(:first-child) {
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
