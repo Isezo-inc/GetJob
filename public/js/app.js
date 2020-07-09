@@ -49872,11 +49872,11 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\isezo\Documents\GitHub\slavic-vitec\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! C:\Users\isezo\Documents\GitHub\slavic-vitec\resources\sass\app.scss */"./resources/sass/app.scss");
-__webpack_require__(/*! C:\Users\isezo\Documents\GitHub\slavic-vitec\resources\sass\employer.scss */"./resources/sass/employer.scss");
-__webpack_require__(/*! C:\Users\isezo\Documents\GitHub\slavic-vitec\resources\sass\registration.scss */"./resources/sass/registration.scss");
-module.exports = __webpack_require__(/*! C:\Users\isezo\Documents\GitHub\slavic-vitec\resources\sass\enterTheSystem.scss */"./resources/sass/enterTheSystem.scss");
+__webpack_require__(/*! C:\Users\Victor\Documents\GitHub\slavic-vitec\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\Users\Victor\Documents\GitHub\slavic-vitec\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\Victor\Documents\GitHub\slavic-vitec\resources\sass\employer.scss */"./resources/sass/employer.scss");
+__webpack_require__(/*! C:\Users\Victor\Documents\GitHub\slavic-vitec\resources\sass\registration.scss */"./resources/sass/registration.scss");
+module.exports = __webpack_require__(/*! C:\Users\Victor\Documents\GitHub\slavic-vitec\resources\sass\enterTheSystem.scss */"./resources/sass/enterTheSystem.scss");
 
 
 /***/ })

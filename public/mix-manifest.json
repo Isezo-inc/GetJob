@@ -3,5 +3,6 @@
     "/css/app.css": "/css/app.css",
     "/css/employer.css": "/css/employer.css",
     "/css/registration.css": "/css/registration.css",
-    "/css/enterTheSystem.css": "/css/enterTheSystem.css"
+    "/css/enterTheSystem.css": "/css/enterTheSystem.css",
+    "/js/staffer.js": "/js/staffer.js"
 }

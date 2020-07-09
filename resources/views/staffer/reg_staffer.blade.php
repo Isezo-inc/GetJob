@@ -1,34 +1,18 @@
 @extends('layouts.layout_reg')
 @section('title-block')Регистрация для поиска работы@endsection
-@section('hello_text')Приветственный, завлекающий текст@endsection
+@section('hello_text')Регистрация@endsection
 @section('save_form')
-<form action = "save.blade.php" method="post">
-  <div class="input-group">
-    <h4>Блок 1</h4>
-    <div class="input-group">
-      <input type="text" placeholder="Электронная почта" data-qa="employer-registration-email" name="email" value="" class="form-control">
-    </div>
-    <div class="input-group">
-      <input type="text" placeholder="Пароль" data-qa="employer-registration-email" name="password" value="" class="form-control">
-    </div>
+<form action="{{route('reg_emplyer_submit')}}" method="post">
+  @csrf
+  <div class="form-group">
+    <p><label for="email">Email</label>
+    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Email"></p>
   </div>
-  <div class="input-group">
-    <h4>Блок 2</h4>
-    <div class="input-group">
-      <input type = "text" placeholder = "Имя" name = "name" class="form-control">
-    </div>
-    <div class="input-group">
-      <input type = "text" placeholder = "Фамилия"  name="family" class="form-control">
-    </div>
-    <div class="input-group">
-      <input type="tel" placeholder="Телефон" data-qa="employer-registration-phone-phoneFull" name="phoneFull" class="form-control">
-    </div>
-    <div class="input-group">
-      <input type="text" data-qa="auth-employer__city-input" data-gaformstatistic-name="areaId" placeholder="Город" autocomplete="off" value="" class="form-control">
-    </div>
-    <div class="input-group">
-      <input type="submit" value="Зарегистрироваться" class="btn btn-danger btn-lg">
-    </div>
+  <div class="form-group">
+    <label for="passinput">Пароль</label>
+    <input type="password" class="form-control" id="passinput" name="password" placeholder="Пароль">
   </div>
+  <a href="#" onclick="return showpass(this);">Показать п</a>
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 @endsection
