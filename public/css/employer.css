@@ -6,10 +6,10 @@ body {
   color: #17a2b8;
 }
 
-.nav-masthead .nav-link:hover,
+/*.nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom: 0.25rem solid #17a2b8;
-}
+  border-bottom: .25rem solid #17a2b8;
+}*/
 
 .nav-masthead .active {
   color: #17a2b8;

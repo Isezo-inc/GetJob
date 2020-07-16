@@ -16,4 +16,9 @@ Route::get('/reg_employer', function () {
     return view('employer.reg_employer');
 })->name('registration_employer');
 
+Route::get('/lk', function () {
+    return view('staffer.lk_staffer');
+})->name('lk_staffer');
+
+
 Route::post('/reg_employer/submit', 'UsersController@registration')->name('reg_emplyer_submit');

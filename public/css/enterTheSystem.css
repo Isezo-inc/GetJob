@@ -7,6 +7,7 @@
   height: 100%;
   width: 100%;
   box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.3);
+  z-index: 100;
 }
 
 #create_job {
@@ -18,12 +19,12 @@
 }
 
 #img {
-  /*background: url(https://image.freepik.com/free-vector/_1017-11511.jpg) no-repeat center top;*/
+  background: url(https://www.careerbuilder.com/cdn/assets/us/homepageHero-77afc18b7401984599ace99e2092992561ec04b62554452c03f5a69924b9f12c.jpg) no-repeat center top;
   margin-top: -10px;
-  text-align: center;
+  text-align: left;
   background-position: center center;
   width: 100%;
-  background-size: 100%;
+  background-size: cover;
 }
 
 a {
@@ -99,7 +100,11 @@ body {
   margin-left: 1rem;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 768px) {
+  .hero-txt h1 {
+    font-size: 4vw;
+  }
+
   .masthead-brand {
     float: left;
     font-size: 38px;
@@ -108,6 +113,26 @@ body {
 
   .nav-masthead {
     float: right;
+  }
+}
+
+@media (min-height: 600px) {
+  .search {
+    padding-top: 0px;
+  }
+
+  #img {
+    height: 340px;
+  }
+}
+
+@media (min-height: 800px) {
+  .search {
+    padding-top: 200px;
+  }
+
+  #img {
+    height: 480px;
   }
 }
 
