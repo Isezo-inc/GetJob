@@ -11,18 +11,16 @@
 }
 
 #create_job {
-  padding-right: 10%;
+  background: url(https://www.careerbuilder.com/cdn/assets/us/homepageHero-77afc18b7401984599ace99e2092992561ec04b62554452c03f5a69924b9f12c.jpg) no-repeat center top;
   text-align: right;
-  background-position: center center;
   width: 100%;
-  background-size: 100%;
+  background-size: cover;
 }
 
 #img {
   background: url(https://www.careerbuilder.com/cdn/assets/us/homepageHero-77afc18b7401984599ace99e2092992561ec04b62554452c03f5a69924b9f12c.jpg) no-repeat center top;
   margin-top: -10px;
   text-align: left;
-  background-position: center center;
   width: 100%;
   background-size: cover;
 }
@@ -75,19 +73,33 @@ body {
 }
 
 .form-inline {
-  display: inherit;
   padding: 5px;
   margin: 5px;
 }
 
 .form-control {
-  border-radius: 100px;
   border: 1px solid #17a2b8;
   font-size: 1.5rem;
 }
 
 .nav {
   padding-right: 15%;
+}
+
+.nav-footer {
+  padding-left: 10%;
+  padding-right: 10%;
+  text-decoration: none;
+}
+
+.footer-links {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .nav-masthead .nav-link {
@@ -124,6 +136,14 @@ body {
   #img {
     height: 340px;
   }
+
+  #create_job {
+    height: 280px;
+  }
+
+  .form-inline .form-control {
+    width: 100%;
+  }
 }
 
 @media (min-height: 800px) {
@@ -133,6 +153,10 @@ body {
 
   #img {
     height: 480px;
+  }
+
+  #create_job {
+    height: 340px;
   }
 }
 

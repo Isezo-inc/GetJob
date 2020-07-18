@@ -20,10 +20,6 @@
 <body>
   @yield('head')
   <main role="main" class="mt-2">
-    <!--<div class="container-fluid" id="create_job">
-      <h1 class="text-success" style="font-size:82px;">Black lives matter</h1>
-        @yield('button_block1')
-    </div>-->
     <div class="container-fluid" id="img">
       <div class="col-lg-ofsset-2 search">
         @yield('search')
@@ -31,8 +27,12 @@
     </div>
 
 @yield('popular-jobs')
+@yield('qwe')
 
   </main>
+
+@yield('footer')
+
 @extends('auth')
 </body>
 </html>

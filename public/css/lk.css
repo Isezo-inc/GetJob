@@ -1,18 +1,16 @@
-.lk{
+.lk {
   height: 100%;
   padding-left: 23%;
   padding-right: 7%;
   padding-top: 4%;
 }
 
-.side-menu{
+.side-menu {
   width: auto;
   float: left;
 }
 
-.tab-content{
-}
-
-.nav{
+.nav {
   display: inline-block;
 }
+

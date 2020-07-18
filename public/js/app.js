@@ -49821,10 +49821,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/sass/app.scss":
-/*!*********************************!*\
-  !*** ./resources/sass/app.scss ***!
-  \*********************************/
+/***/ "./resources/sass/create_form.scss":
+/*!*****************************************!*\
+  !*** ./resources/sass/create_form.scss ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -49854,6 +49854,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/lk.scss":
+/*!********************************!*\
+  !*** ./resources/sass/lk.scss ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/registration.scss":
 /*!******************************************!*\
   !*** ./resources/sass/registration.scss ***!
@@ -49865,17 +49876,30 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/staffer.scss":
+/*!*************************************!*\
+  !*** ./resources/sass/staffer.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!********************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/employer.scss ./resources/sass/registration.scss ./resources/sass/enterTheSystem.scss ***!
-  \********************************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/staffer.scss ./resources/sass/lk.scss ./resources/sass/employer.scss ./resources/sass/registration.scss ./resources/sass/create_form.scss ./resources/sass/enterTheSystem.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\Users\isezo\Documents\GitHub\slavic-vitec\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! C:\Users\isezo\Documents\GitHub\slavic-vitec\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\isezo\Documents\GitHub\slavic-vitec\resources\sass\staffer.scss */"./resources/sass/staffer.scss");
+__webpack_require__(/*! C:\Users\isezo\Documents\GitHub\slavic-vitec\resources\sass\lk.scss */"./resources/sass/lk.scss");
 __webpack_require__(/*! C:\Users\isezo\Documents\GitHub\slavic-vitec\resources\sass\employer.scss */"./resources/sass/employer.scss");
 __webpack_require__(/*! C:\Users\isezo\Documents\GitHub\slavic-vitec\resources\sass\registration.scss */"./resources/sass/registration.scss");
+__webpack_require__(/*! C:\Users\isezo\Documents\GitHub\slavic-vitec\resources\sass\create_form.scss */"./resources/sass/create_form.scss");
 module.exports = __webpack_require__(/*! C:\Users\isezo\Documents\GitHub\slavic-vitec\resources\sass\enterTheSystem.scss */"./resources/sass/enterTheSystem.scss");
 
 

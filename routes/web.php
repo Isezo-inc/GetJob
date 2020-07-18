@@ -18,7 +18,11 @@ Route::get('/reg_employer', function () {
 
 Route::get('/lk', function () {
     return view('staffer.lk_staffer');
-})->name('lk_staffer');
+})->name('lk');
+
+Route::get('/create_job', function () {
+    return view('papkahuyapka.create_job');
+})->name('create_job');
 
 
 Route::post('/reg_employer/submit', 'UsersController@registration')->name('reg_emplyer_submit');

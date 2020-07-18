@@ -2,12 +2,87 @@ body, {
   color: #fff;
 }
 
+footer {
+    background-color: #1e5c8b;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
 .diagram{
   display: inline-block;
   box-sizing: border-box;
   padding-left: 10%;
   z-index: 4;
 }
+
+.org-card {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+    width: 50%;
+    padding: 1%;
+    min-width: calc(180px - .5rem);
+}
+
+.org-card:hover img {
+    -webkit-transform: scale(1.25,1.25);
+    transform: scale(1.25,1.25);
+}
+
+.org-card .org-container {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    line-height: 0;
+}
+
+.org-card img {
+    position: relative;
+    display: block;
+    width: 480px;
+    height: 480px;
+    object-fit: cover;
+}
+
+.org-card.green-card .org-shade {
+    background-color: #17a2b8;
+}
+
+.org-card .org-info {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    padding: .75rem;
+}
+
+.org-card .org-shade {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .85;
+}
+
 
 .ul-diagram{
   position: relative;
@@ -140,4 +215,22 @@ li{
       //margin-left: 3rem;
       width: calc(33%)!important;
   }
+}
+
+.select2-container--default .select2-selection--multiple {
+    //border-radius: 100px;
+    border: 1px solid #17a2b8;
+    font-size: 1.5rem;
+}
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+    //border-bottom-left-radius: 100px;
+    //border-bottom-right-radius: 100px;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: 1px solid #17a2b8;
+}
+
+.select2-results__option {
+    background-color: red;
 }
