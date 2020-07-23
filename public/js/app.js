@@ -49894,13 +49894,13 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\isezo\Documents\GitHub\slavic-vitec\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! C:\Users\isezo\Documents\GitHub\slavic-vitec\resources\sass\staffer.scss */"./resources/sass/staffer.scss");
-__webpack_require__(/*! C:\Users\isezo\Documents\GitHub\slavic-vitec\resources\sass\lk.scss */"./resources/sass/lk.scss");
-__webpack_require__(/*! C:\Users\isezo\Documents\GitHub\slavic-vitec\resources\sass\employer.scss */"./resources/sass/employer.scss");
-__webpack_require__(/*! C:\Users\isezo\Documents\GitHub\slavic-vitec\resources\sass\registration.scss */"./resources/sass/registration.scss");
-__webpack_require__(/*! C:\Users\isezo\Documents\GitHub\slavic-vitec\resources\sass\create_form.scss */"./resources/sass/create_form.scss");
-module.exports = __webpack_require__(/*! C:\Users\isezo\Documents\GitHub\slavic-vitec\resources\sass\enterTheSystem.scss */"./resources/sass/enterTheSystem.scss");
+__webpack_require__(/*! C:\Users\isezo\Documents\GitHub\GetJob\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\Users\isezo\Documents\GitHub\GetJob\resources\sass\staffer.scss */"./resources/sass/staffer.scss");
+__webpack_require__(/*! C:\Users\isezo\Documents\GitHub\GetJob\resources\sass\lk.scss */"./resources/sass/lk.scss");
+__webpack_require__(/*! C:\Users\isezo\Documents\GitHub\GetJob\resources\sass\employer.scss */"./resources/sass/employer.scss");
+__webpack_require__(/*! C:\Users\isezo\Documents\GitHub\GetJob\resources\sass\registration.scss */"./resources/sass/registration.scss");
+__webpack_require__(/*! C:\Users\isezo\Documents\GitHub\GetJob\resources\sass\create_form.scss */"./resources/sass/create_form.scss");
+module.exports = __webpack_require__(/*! C:\Users\isezo\Documents\GitHub\GetJob\resources\sass\enterTheSystem.scss */"./resources/sass/enterTheSystem.scss");
 
 
 /***/ })

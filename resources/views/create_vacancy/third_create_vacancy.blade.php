@@ -13,7 +13,6 @@
 
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/create_form.css">
-  <link rel="stylesheet" type="text/css" href="css/material-design-iconic-font.css">
 <!--===============================================================================================-->
 </head>
 <body>
@@ -21,36 +20,48 @@
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<form class="login100-form validate-form">
+          <div class="">
+            <input type="hidden" name="name" value="{{ $name }}">
+            <input type="hidden" name="company" value="{{ $company }}">
+            <input type="hidden" name="vacancy" value="{{ $vacancy }}">
+            <input type="hidden" name="city" value="{{ $city }}">
+            <input type="hidden" name="phone" value="{{ $phone }}">
+            <input type="hidden" name="type_employ" value="{{ $type_employ }}">
+            <input type="hidden" name="schedule_work" value="{{ $schedule_work }}">
+            <input type="hidden" name="min_salary" value="{{ $min_salary }}">
+            <input type="hidden" name="max_salary" value="{{ $max_salary }}">
+            <input type="hidden" name="key_skills" value="{{ $key_skills }}">
+          </div>
 					<span class="login100-form-title pb-5">
-						Разместить вакансию
-					</span>
-					<span class="login100-form-title p-b-48">
-						<i class="zmdi zmdi-font"></i>
+						Описание вакансии
 					</span>
 
           <div class="wrap-input100 validate-input" data-validate = "Это поле не должно быть пустым">
-            <input class="input100" type="text" name="name">
-            <span class="focus-input100" data-placeholder="Ваше имя"></span>
+            <input class="input100" type="textarea" name="description_job">
+						<span class="focus-input100" data-placeholder="Описание работы"></span>
           </div>
 
           <div class="wrap-input100 validate-input" data-validate = "Это поле не должно быть пустым">
-						<input class="input100" type="text" name="phone">
-						<span class="focus-input100" data-placeholder="Номер телефона"></span>
-					</div>
+            <input class="input100" type="textarea" name="duties">
+						<span class="focus-input100" data-placeholder="Обязаности"></span>
+          </div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Это поле не должно быть пустым">
-						<input class="input100" type="text" name="company">
-						<span class="focus-input100" data-placeholder="Название компании"></span>
+            <input class="input100" type="textarea" name="requirements">
+						<span class="focus-input100" data-placeholder="Требования"></span>
+					</div>
+          <div class="wrap-input100 validate-input" data-validate = "Это поле не должно быть пустым">
+            <input class="input100" type="textarea" name="requirements_optional">
+						<span class="focus-input100" data-placeholder="Требования (необязательные)"></span>
 					</div>
 
           <div class="wrap-input100 validate-input" data-validate = "Это поле не должно быть пустым">
-						<input class="input100" type="text" name="vacancy">
-						<span class="focus-input100" data-placeholder="Должность"></span>
+						<input class="input100" type="textarea" name="if">
+						<span class="focus-input100" data-placeholder="Условия"></span>
 					</div>
-
-					<div class="wrap-input100 validate-input" data-validate="Это поле не должно быть пустым">
-						<input class="input100" type="password" name="city">
-						<span class="focus-input100" data-placeholder="Город"></span>
+          <div class="wrap-input100 validate-input" data-validate = "Это поле не должно быть пустым">
+						<input class="input100" type="textarea" name="additionally">
+						<span class="focus-input100" data-placeholder="Дополнительная инфа"></span>
 					</div>
 
 					<div class="container-login100-form-btn">

@@ -179,7 +179,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\isezo\Documents\GitHub\slavic-vitec\resources\js\create_form.js */"./resources/js/create_form.js");
+module.exports = __webpack_require__(/*! C:\Users\isezo\Documents\GitHub\GetJob\resources\js\create_form.js */"./resources/js/create_form.js");
 
 
 /***/ })

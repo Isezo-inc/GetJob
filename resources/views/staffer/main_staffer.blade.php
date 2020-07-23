@@ -32,7 +32,7 @@
     <div class="col-12 col-sm-6 col-md-9 col-xl-5 pb-4">
       <select class="js-example-basic-multiple form-control" placeholder="Город" name="city[]" multiple="multiple" style="width:100%;">
         <option value="AL">Город 1</option>
-        <option value="WY">Город 2</option>
+        <option value="WY">огород 2</option>
       </select>
     </div>
     <div class="col-12 col-sm-6 col-md-3 col-xl-2 pb-4">
@@ -298,9 +298,6 @@
 
 @section('qwe')
 <section class="flex flex-wrap p-1 ">
-  <header class="p-2">
-    <h2 class="pl-5 mb-0 -ml-1 flex-1-hack text-dark">Создать</h2>
-  </header>
   <article class="org-card green-card" style="float:left;">
     <a href="#" class="org-container">
       <img alt="Going to a job interview? This is how you can get ready" src="https://promdevelop.ru/wp-content/uploads/sostavit-rezyume-na-rabotu-obrazets-2017.png">
