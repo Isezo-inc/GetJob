@@ -12,7 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/create_form.css')}}">
+	<link rel="stylesheet" type="text/css" href="css/create_form.css">
 <!--===============================================================================================-->
 </head>
 <body>
@@ -61,6 +61,6 @@
 			</div>
 		</div>
 	</div>
-	<script src="/js/create_form.js"></script>
+	<script src="js/create_form.js"></script>
 </body>
 </html>
