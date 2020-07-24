@@ -27,11 +27,27 @@ class create_vacancyController extends Controller
     $min_salary = $req->POST('min_salary');
     $max_salary = $req->POST('max_salary');
     $key_skills = $req->POST('key_skills');
-    return view('create_vacancy.second_create_vacancy', compact("name","company","vacancy","city","phone","type_employ","schedule_work","min_salary","max_salary","key_skills"));
+    return view('create_vacancy.third_create_vacancy', compact("name","company","vacancy","city","phone","type_employ","schedule_work","min_salary","max_salary","key_skills"));
   }
 
   public function third_step(Request $req){
-
+    $name = $req->POST('name');
+    $company = $req->POST('company');
+    $vacancy = $req->POST('vacancy');
+    $city = $req->POST('city');
+    $phone = $req->POST('phone');
+    $type_employ = $req->POST('type_employ');
+    $schedule_work = $req->POST('schedule_work');
+    $min_salary = $req->POST('min_salary');
+    $max_salary = $req->POST('max_salary');
+    $key_skills = $req->POST('key_skills');
+    $description_job = $req->POST('description_job');
+    $duties = $req->POST('duties');
+    $requirements = $req->POST('requirements');
+    $requirements_optional = $req->POST('requirements_optional');
+    $if = $req->POST('if');
+    $additionally = $req->POST('additionally');
+    return view('create_vacancy.finish_create_vacancy', compact("name","company","vacancy","city","phone","type_employ","schedule_work","min_salary","max_salary","key_skills", "description_job","duties","requirements","requirements_optional","if","additionally"));
 
   }
 

@@ -1,4 +1,3 @@
-<!--Фаил окна создания вакансии-->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -12,13 +11,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/create_form.css">
+	<link rel="stylesheet" type="text/css" href="/css/create_form.css">
 <!--===============================================================================================-->
 </head>
 <body>
 	<div class="container-login100">
 		<div class="wrap-login100">
-			<form class="login100-form validate-form">
+			<form class="login100-form validate-form" action="{{route('tstep_cv')}}" method="post">
+        @csrf
         <div class="">
           <input type="hidden" name="name" value="{{ $name }}">
           <input type="hidden" name="company" value="{{ $company }}">
@@ -57,9 +57,9 @@
 
         <span> Заработная плата</span>
 				<div class="wrap-input100 validate-input" style="display:flex;margin-bottom: 0;" data-validate = "Укажите зарплату">
-          <input class="input100" type="number" placeholder="25000"  step="1000" min="0" name="salary1">
+          <input class="input100" type="number" placeholder="25000"  step="1000" min="0" name="min_salary">
           <span class="focus-input100"></span>
-          <input class="input100 collapse" id="Salary12" type="number" placeholder="35000" step="1000" min="1000" name="salary2">
+          <input class="input100 collapse" id="Salary12" type="number" placeholder="35000" step="1000" min="1000" name="max_salary">
           <select class="input100" name="currency">
             <option value="rubl">руб</option>
             <option value="dollar">USD</option>
@@ -80,7 +80,7 @@
 
 
         <div class="wrap-input100 validate-input" data-validate = "Это поле не должно быть пустым">
-					<input class="input100" type="textarea" name="skills" value="">
+					<input class="input100" type="textarea" name="key_skills" value="">
 					<span class="focus-input100" data-placeholder="Ключевые навыки"></span>
 				</div>
 
@@ -95,6 +95,6 @@
 			</form>
 		</div>
 	</div>
-	<script src="js/create_form.js"></script>
+	<script src="/js/create_form.js"></script>
 </body>
 </html>

@@ -447,6 +447,27 @@ iframe {
   opacity: 1;
 }
 
+.tabs-border {
+  border-bottom: 1px solid #E9E9E9;
+}
+
+.tabs a.active {
+  font-weight: bold;
+  border-color: #F9B515;
+}
+
+.tabs a {
+  color: #182642;
+  font-variant: normal;
+  font-size: 1rem;
+  border-bottom: 4px solid transparent;
+  padding-bottom: 5px;
+}
+
+.fl-r {
+  float: right;
+}
+
 @media (max-width: 992px) {
   .alert-validate::before {
     visibility: visible;

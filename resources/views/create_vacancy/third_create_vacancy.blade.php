@@ -12,14 +12,15 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/create_form.css">
+	<link rel="stylesheet" type="text/css" href="/css/create_form.css">
 <!--===============================================================================================-->
 </head>
 <body>
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form">
+        <form class="login100-form validate-form" action="{{route('ffstep_cv')}}" method="post">
+          @csrf
           <div class="">
             <input type="hidden" name="name" value="{{ $name }}">
             <input type="hidden" name="company" value="{{ $company }}">
@@ -76,6 +77,6 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/create_form.js"></script>
+	<script src="/js/create_form.js"></script>
 </body>
 </html>
