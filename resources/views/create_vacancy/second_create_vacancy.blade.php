@@ -9,6 +9,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="/css/create_form.css">
@@ -57,25 +59,25 @@
 
         <span> Заработная плата</span>
 				<div class="wrap-input100 validate-input" style="display:flex;margin-bottom: 0;" data-validate = "Укажите зарплату">
-          <input class="input100" type="number" placeholder="25000"  step="1000" min="0" name="min_salary">
+          <input class="input100" type="number" placeholder="25000"  step="100" min="100" name="min_salary">
           <span class="focus-input100"></span>
-          <input class="input100 collapse" id="Salary12" type="number" placeholder="35000" step="1000" min="1000" name="max_salary">
+          <!--<input class="input100 collapse" id="Salary12" type="number" placeholder="35000" step="1000" min="1000" name="max_salary">-->
           <select class="input100" name="currency">
-            <option value="rubl">руб</option>
-            <option value="dollar">USD</option>
-            <option value="dollar">EUR</option>
+            <option value="₽">руб</option>
+            <option value="$">USD</option>
+            <option value="€">EUR</option>
           </select>
 
           <select class="input100" name="jobsalaryperiod">
-            <option value="HOUR">В час</option>
-            <option value="DAY">В день</option>
-            <option value="WEEK">В неделю</option>
-            <option value="MOUNT" selected>В месяц</option>
-            <option value="YEAR">В год</option>
+            <option value="час">В час</option>
+            <option value="день">В день</option>
+            <option value="неделю">В неделю</option>
+            <option value="месяц" selected>В месяц</option>
+            <option value="год">В год</option>
           </select>
 
 				</div>
-        <a class="btn btn-link" data-toggle="collapse" data-target="#Salary12" style="margin-bottom: 37px;">Указать диапазон</a>
+        <a class="btn btn-link disabled" data-toggle="collapse" data-target="#Salary12" style="margin-bottom: 37px;">Указать диапазон</a>
 
 
 

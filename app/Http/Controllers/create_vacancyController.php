@@ -25,9 +25,10 @@ class create_vacancyController extends Controller
     $type_employ = $req->POST('type_employ');
     $schedule_work = $req->POST('schedule_work');
     $min_salary = $req->POST('min_salary');
-    $max_salary = $req->POST('max_salary');
+    $currency = $req->POST('currency');
+    $jobsalaryperiod = $req->POST('jobsalaryperiod');
     $key_skills = $req->POST('key_skills');
-    return view('create_vacancy.third_create_vacancy', compact("name","company","vacancy","city","phone","type_employ","schedule_work","min_salary","max_salary","key_skills"));
+    return view('create_vacancy.third_create_vacancy', compact("name","company","vacancy","city","phone","type_employ","schedule_work","min_salary","currency","jobsalaryperiod","key_skills"));
   }
 
   public function third_step(Request $req){
@@ -39,7 +40,8 @@ class create_vacancyController extends Controller
     $type_employ = $req->POST('type_employ');
     $schedule_work = $req->POST('schedule_work');
     $min_salary = $req->POST('min_salary');
-    $max_salary = $req->POST('max_salary');
+    $currency = $req->POST('currency');
+    $jobsalaryperiod = $req->POST('jobsalaryperiod');
     $key_skills = $req->POST('key_skills');
     $description_job = $req->POST('description_job');
     $duties = $req->POST('duties');
@@ -47,7 +49,7 @@ class create_vacancyController extends Controller
     $requirements_optional = $req->POST('requirements_optional');
     $if = $req->POST('if');
     $additionally = $req->POST('additionally');
-    return view('create_vacancy.finish_create_vacancy', compact("name","company","vacancy","city","phone","type_employ","schedule_work","min_salary","max_salary","key_skills", "description_job","duties","requirements","requirements_optional","if","additionally"));
+    return view('create_vacancy.finish_create_vacancy', compact("name","company","vacancy","city","phone","type_employ","schedule_work","min_salary","currency","jobsalaryperiod","key_skills", "description_job","duties","requirements","requirements_optional","if","additionally"));
 
   }
 
