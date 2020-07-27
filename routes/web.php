@@ -1,11 +1,49 @@
 <?php
 
+// Главная страница
 Route::get('/', function () {
     return view('staffer.main_staffer');
 })->name('home');
 
+// СТраница аутентификации
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('login');
+
+// СТраница регистрации соискателей
 Route::get('/reg_staffer', function () {
-    return view('staffer.reg_staffer');
+    return view('auth.reg_staffer');
+})->name('reg_staffer');
+
+//Ф-ция отправки подтверждения почты на емаил
+Route::post('/senmail', 'StafferController@sendmail')->name('sendmail');
+
+//Ф-ция регистрации
+Route::post('/reg_staffer/submit', 'StafferController@registration')->name('reg_staffer_submit');
+
+//Ф-ция подтверждения емаила
+Route::get('/confmail', 'StafferController@confmail')->name('confmail');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Route::get('/regi_staffer', function () {
+    return view('staffer.regi_staffer');
 })->name('registration_staffer');
 
 Route::get('/employer', function () {

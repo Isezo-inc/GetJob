@@ -33,6 +33,5 @@
 
 @yield('footer')
 
-@extends('auth')
 </body>
 </html>

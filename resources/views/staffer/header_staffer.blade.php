@@ -4,6 +4,6 @@
 <nav class="nav nav-masthead justify-content-rigth">
   <a class="nav-link active" href="/">Соискателям</a>
   <a class="nav-link" href="/employer">Работодателям</a>
-  <a class="nav-link" href="#" data-toggle="collapse" data-target="#window">Войти</a>
+  <a class="nav-link" href="{{route('login')}}">Войти</a>
 </nav>
 @endsection
