@@ -58,13 +58,19 @@ Route::get('/lk', function () {
     return view('staffer.lk_staffer');
 })->name('lk');
 
+// СТраница создания резюме
+Route::get('/create_resume', function () {
+    return view('create_resume.main_create_resume');
+})->name('main_cr');
+
+// СТраница создания вакансии
 Route::get('/create_vacancy', function () {
     return view('create_vacancy.first_create_vacancy');
 })->name('fstep_cv');
-
+// ф-ции 123 шагов
 Route::post('/create_vacancy/second_step', 'create_vacancyController@first_step')->name('sstep_cv');
 Route::post('/create_vacancy/third_step', 'create_vacancyController@second_step')->name('tstep_cv');
 Route::post('/create_vacancy/finish_step', 'create_vacancyController@third_step')->name('ffstep_cv');
-//Route::post('/', 'create_vacancyController@save_step')->name('end_cv');
+Route::post('/employer', 'create_vacancyController@save_step')->name('save_cv');
 
 Route::post('/reg_employer/submit', 'UsersController@registration')->name('reg_emplyer_submit');

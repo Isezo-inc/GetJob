@@ -114,7 +114,7 @@ window.showpass = function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Victor\Documents\GitHub\GetJob\resources\js\staffer.js */"./resources/js/staffer.js");
+module.exports = __webpack_require__(/*! C:\Users\isezo\Documents\GitHub\GetJob\resources\js\staffer.js */"./resources/js/staffer.js");
 
 
 /***/ })

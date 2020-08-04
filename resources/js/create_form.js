@@ -1,4 +1,3 @@
-
 (function ($) {
     "use strict";
 
@@ -35,7 +34,7 @@
     });
 
 
-    $('.validate-form .input100').each(function(){
+    /*$('.validate-form .input100').each(function(){
         $(this).focus(function(){
            hideValidate(this);
         });
@@ -70,7 +69,7 @@
     }
 
     /*==================================================================
-    [ Show pass ]*/
+    [ Show pass ]
     var showPass = 0;
     $('.btn-show-pass').on('click', function(){
         if(showPass == 0) {
@@ -85,7 +84,7 @@
             $(this).find('i').removeClass('zmdi-eye-off');
             showPass = 0;
         }
-    });
+    });*/
 
 
 })(jQuery);

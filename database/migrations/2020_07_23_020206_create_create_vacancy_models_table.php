@@ -16,21 +16,17 @@ class CreateCreateVacancyModelsTable extends Migration
         Schema::create('create_vacancy_models', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->string('name_Company');
+            $table->string('company');
             $table->string('vacancy');
             $table->string('city');
-            $table->integer('phone');
+            $table->string('phone');
             $table->string('type_employ');
             $table->string('schedule_work');
             $table->integer('min_salary');
-            $table->integer('max_salary');
+            $table->string('currency');
+            $table->string('job_salary_period');
             $table->text('key_skills');
-            $table->text('description_job');
-            $table->text('duties');
-            $table->text('requirements');
-            $table->text('requirements_optional');
-            $table->text('if');
-            $table->text('additionally');
+            $table->MEDIUMTEXT('descriptionText');
             $table->timestamps();
         });
     }

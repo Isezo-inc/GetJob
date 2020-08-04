@@ -14,6 +14,7 @@ const mix = require('laravel-mix');
 mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/staffer.js', 'public/js')
     .js('resources/js/create_form.js', 'public/js')
+    .js('resources/js/autosize.js', 'public/js')
     .sass('resources/sass/stafferstyle.scss', 'public/css')
     .sass('resources/sass/lk.scss', 'public/css')
     .sass('resources/sass/employer.scss', 'public/css')

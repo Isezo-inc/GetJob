@@ -4,8 +4,9 @@
     "/css/lk.css": "/css/lk.css",
     "/css/employer.css": "/css/employer.css",
     "/css/registration.css": "/css/registration.css",
-    "/css/create_form.css": "/css/create_form.css",
     "/css/enterTheSystem.css": "/css/enterTheSystem.css",
+    "/js/autosize.js": "/js/autosize.js",
     "/js/create_form.js": "/js/create_form.js",
-    "/js/staffer.js": "/js/staffer.js"
+    "/js/staffer.js": "/js/staffer.js",
+    "/css/create_form.css": "/css/create_form.css"
 }

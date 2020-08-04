@@ -36,16 +36,16 @@
       </select>
     </div>
     <div class="col-12 col-sm-6 col-md-3 col-xl-2 pb-4">
-      <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#more">Доп.</button>
+      <!--<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#more">Доп.</button>-->
       <button type="button" name="button" class="btn btn-danger btn-lg">Найти</button>
     </div>
   </div>
 
-  <div id="more" class="form-inline collapse">
+  <!--<div id="more" class="form-inline collapse">
     <input type="text" class="form-control" placeholder="Зарплата" name="salary" value="">
     <input type="text" class="form-control" placeholder="опыт" name="experience" value="">
     <input type="text" class="form-control" placeholder="Должность" name="job" value="">
-  </div>
+  </div>-->
 </div>
 </form>
 @endsection
@@ -299,7 +299,7 @@
 @section('qwe')
 <section class="flex flex-wrap p-1 ">
   <article class="org-card green-card" style="float:left;">
-    <a href="#" class="org-container">
+    <a href="/create_resume" class="org-container">
       <img alt="Going to a job interview? This is how you can get ready" src="https://promdevelop.ru/wp-content/uploads/sostavit-rezyume-na-rabotu-obrazets-2017.png">
       <div class="org-shade"></div>
       <div class="org-info">
@@ -308,7 +308,7 @@
     </a>
   </article>
   <article class="org-card green-card" style="float:right;">
-    <a href="#" class="org-container">
+    <a href="/create_vacancy" class="org-container">
       <img alt="Starting a new job? Keep these in mind" src="https://vplanning.ru/wp-content/uploads/2017/11/vacancy.jpg">
       <div class="org-shade"></div>
       <div class="org-info">

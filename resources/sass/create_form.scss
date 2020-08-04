@@ -99,6 +99,10 @@ button {
 	background: transparent;
 }
 
+span{
+	border: 0 !important;
+}
+
 button:hover {
 	cursor: pointer;
 }
@@ -110,6 +114,7 @@ iframe {
 
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
+
 .txt1 {
   font-family: Poppins-Regular;
   font-size: 13px;
@@ -144,10 +149,32 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
+	padding-top: 100px;
   background: #f2f2f2;
 }
 
+.bubble{
+	border-radius: 15px;
+  padding: 8px 20px 6px 20px;
+  background: #E9E9E9;
+  color: #182642;
+  font-size: 0.8rem;
+  text-align: center;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.progress{
+    position: absolute;
+    left: 0;
+    top: 0;
+		background-color: white;
+}
+
 .wrap-login100 {
+	position: relative;
   width: 768px;
   background: #fff;
   border-radius: 10px;
@@ -167,6 +194,7 @@ iframe {
 
 .login100-form {
   width: 100%;
+	background-color: white;
 }
 
 .login100-form-title {
@@ -254,6 +282,18 @@ iframe {
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+.freeText{
+	resize: none;
+	height: 45px;
+	overflow-y: hidden;
+	width: 100%;
+}
+
+
+.select2-container--below + .focus-input100::before {
+  width: 100%;
 }
 
 .input100:focus + .focus-input100::after {
@@ -378,6 +418,12 @@ iframe {
   left: 0;
 }
 
+.wrap-headder{
+	position: absolute;
+	top: 2%;
+	left: 15%;
+}
+
 
 /*------------------------------------------------------------------
 [ Responsive ]*/
@@ -452,17 +498,25 @@ iframe {
   opacity: 1;
 }
 
+.masthead-brand {
+	float: left;
+	font-size: 38px;
+	padding-left: 15%;
+	display: contents;
+}
+
 .tabs-border{
-	border-bottom: 1px solid #E9E9E9;
+	border-bottom: 4px solid #E9E9E9;
+	margin-left: 15px;
+	margin-right: 15px;
 }
 
 .tabs a.active {
     font-weight: bold;
-    border-color: #F9B515;
+    border-color: #27cdfd;
 }
 
 .tabs a{
-    color: #182642;
     font-variant: normal;
     font-size: 1rem;
     border-bottom: 4px solid transparent;
@@ -478,4 +532,12 @@ iframe {
     visibility: visible;
     opacity: 1;
   }
+}
+
+.select2-container--default .select2-selection--single {
+	border: 0;
+}
+
+label{
+	color: #999999;
 }
