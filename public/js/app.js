@@ -50197,6 +50197,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/footer_style.scss":
+/*!******************************************!*\
+  !*** ./resources/sass/footer_style.scss ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/lk.scss":
 /*!********************************!*\
   !*** ./resources/sass/lk.scss ***!
@@ -50231,14 +50242,15 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!****************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/stafferstyle.scss ./resources/sass/lk.scss ./resources/sass/employer.scss ./resources/sass/registration.scss ./resources/sass/create_form.scss ./resources/sass/enterTheSystem.scss ***!
-  \****************************************************************************************************************************************************************************************************************************************/
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/stafferstyle.scss ./resources/sass/footer_style.scss ./resources/sass/lk.scss ./resources/sass/employer.scss ./resources/sass/registration.scss ./resources/sass/create_form.scss ./resources/sass/enterTheSystem.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\Users\isezo\Documents\GitHub\GetJob\resources\js\app.js */"./resources/js/app.js");
 __webpack_require__(/*! C:\Users\isezo\Documents\GitHub\GetJob\resources\sass\stafferstyle.scss */"./resources/sass/stafferstyle.scss");
+__webpack_require__(/*! C:\Users\isezo\Documents\GitHub\GetJob\resources\sass\footer_style.scss */"./resources/sass/footer_style.scss");
 __webpack_require__(/*! C:\Users\isezo\Documents\GitHub\GetJob\resources\sass\lk.scss */"./resources/sass/lk.scss");
 __webpack_require__(/*! C:\Users\isezo\Documents\GitHub\GetJob\resources\sass\employer.scss */"./resources/sass/employer.scss");
 __webpack_require__(/*! C:\Users\isezo\Documents\GitHub\GetJob\resources\sass\registration.scss */"./resources/sass/registration.scss");

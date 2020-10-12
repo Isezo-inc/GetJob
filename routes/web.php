@@ -58,10 +58,18 @@ Route::get('/lk', function () {
     return view('staffer.lk_staffer');
 })->name('lk');
 
+
+Route::get('/search_v', 'searchController@search_vacancy')->name('search_vacancy');
+Route::post('/search_v/select', 'searchController@view_vacancy')->name('search_v_select');
+
 // СТраница создания резюме
 Route::get('/create_resume', function () {
     return view('create_resume.main_create_resume');
 })->name('main_cr');
+Route::get('/create_resume/preview', function () {
+    return view('create_resume.preview_resume');
+})->name('preview_cr');
+
 
 // СТраница создания вакансии
 Route::get('/create_vacancy', function () {

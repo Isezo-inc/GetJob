@@ -4,23 +4,22 @@
 
     /*==================================================================
     [ Focus input ]*/
-    $('.input100').each(function(){
-        $(this).on('blur', function(){
-            if($(this).val().trim() != "") {
-                $(this).addClass('has-val');
-            }
-            else {
-                $(this).removeClass('has-val');
-            }
-        })
-    })
+    $("body").on("blur", ".input100", function () {
+      if($(this).val().trim() != "") {
+          $(this).addClass('has-val');
+      }
+      else {
+          $(this).removeClass('has-val');
+      }
+    });
+
 
 
     /*==================================================================
     [ Validate ]*/
-    var input = $('.validate-input .input100');
+    /*var input = $('.validate-input .input100');
 
-    $('#button').on('click',function(){
+    $('body').on('click',"#button",function(){
         var check = true;
 
         for(var i=0; i<input.length; i++) {
@@ -29,12 +28,11 @@
                 check=false;
             }
         }
-
         return check;
     });
 
 
-    /*$('.validate-form .input100').each(function(){
+    $('.validate-form .input100').each(function(){
         $(this).focus(function(){
            hideValidate(this);
         });

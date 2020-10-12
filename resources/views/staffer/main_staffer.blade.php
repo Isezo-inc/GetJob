@@ -3,8 +3,12 @@
 @section('title-block')Поиск работы@endsection
 
 @section('style')
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
-<link rel = "stylesheet" href="/css/staffer.css">
+<link rel = "stylesheet" href="css/staffer.css">
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 <script>
   $(document).ready(function() {
@@ -22,7 +26,7 @@
 <div class="hero-txt">
   <h1 class="text pl-5">Find<br>JOBS</h1>
 </div>
-<form class="" action="#" method="post">
+<form class="" action="{{route('search_vacancy')}}" method="get">
 <div class="container-fluid">
 
   <div class="form-inline">
@@ -31,13 +35,13 @@
     </div>
     <div class="col-12 col-sm-6 col-md-9 col-xl-5 pb-4">
       <select class="js-example-basic-multiple form-control" placeholder="Город" name="city[]" multiple="multiple" style="width:100%;">
-        <option value="AL">Город 1</option>
-        <option value="WY">огород 2</option>
+        <option value="Биробиджан">Биробиджан</option>
+        <option value="Казань">Казань</option>
       </select>
     </div>
     <div class="col-12 col-sm-6 col-md-3 col-xl-2 pb-4">
       <!--<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#more">Доп.</button>-->
-      <button type="button" name="button" class="btn btn-danger btn-lg">Найти</button>
+      <button type="submit" class="btn btn-danger btn-lg">Найти</button>
     </div>
   </div>
 
@@ -299,7 +303,7 @@
 @section('qwe')
 <section class="flex flex-wrap p-1 ">
   <article class="org-card green-card" style="float:left;">
-    <a href="/create_resume" class="org-container">
+    <a href="{{route('main_cr')}}" class="org-container">
       <img alt="Going to a job interview? This is how you can get ready" src="https://promdevelop.ru/wp-content/uploads/sostavit-rezyume-na-rabotu-obrazets-2017.png">
       <div class="org-shade"></div>
       <div class="org-info">
@@ -308,7 +312,7 @@
     </a>
   </article>
   <article class="org-card green-card" style="float:right;">
-    <a href="/create_vacancy" class="org-container">
+    <a href="{{route('fstep_cv')}}" class="org-container">
       <img alt="Starting a new job? Keep these in mind" src="https://vplanning.ru/wp-content/uploads/2017/11/vacancy.jpg">
       <div class="org-shade"></div>
       <div class="org-info">
@@ -317,36 +321,4 @@
     </a>
   </article>
 </section>
-@endsection
-
-@section('footer')
-<footer style="margin-top: 5rem;">
-  <div class="container position-relative">
-    <ul class="nav nav-footer">
-      <li class="nav-link">
-        <a class="footer-links" href="/user-agreement">
-        Условия использования
-        </a>
-      </li>
-      <li class="nav-link">
-        <a class="footer-links" href="/privacy-policy">
-        Конфиденциальность
-        </a>
-      </li>
-      <li class="nav-link">
-        <a class="footer-links" href="/make-contribution">
-        Внести вклад в развитие
-        </a>
-      </li>
-      <li class="nav-link">
-        <a class="footer-links" href="/about">
-        О сайте
-        </a>
-      </li>
-    </ul>
-    <span class="copyright">© GetJob, 2020 - н.в.</span><br>
-    <span class="contact">E-mail: GetJob@mail.ru</span><br>
-    <span class="copyright-rules">тутутутуутутуууууууууууу </span>
-  </div>
-</footer>
 @endsection

@@ -10,7 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/css/create_form.css">
+	<link rel="stylesheet" type="text/css" href="css/create_form.css">
 <!--===============================================================================================-->
 </head>
 <body>
@@ -75,12 +75,13 @@
 			</div>
 		</div>
 	</div>
+  @extends('footer')
 
   <!-- хз для чего
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
-<script src="/js/create_form.js"></script>
+<script src="js/create_form.js"></script>
 <script>
 $(document).ready(function() {
   $('.js-example-basic-single').select2({

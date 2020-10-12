@@ -2,7 +2,7 @@
 
 @section('title-block')Поиск сотрудника@endsection
 
-@section('style')<link rel = "stylesheet" href="/css/employer.css">@endsection
+@section('style')<link rel = "stylesheet" href="css/employer.css">@endsection
 
 @section('head')@include('employer.header_new_employer')@endsection
 

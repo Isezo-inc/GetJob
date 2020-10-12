@@ -1,0 +1,23 @@
+footer {
+  background-color: #1e5c8b;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.nav-footer {
+  padding-left: 10%;
+  padding-right: 10%;
+  text-decoration: none;
+}
+
+.footer-links {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links:hover {
+  color: white;
+  text-decoration: none;
+}
+
