@@ -243,7 +243,7 @@
                   <div class="d-f">
                     <div class="desc-form">
                       <div class="wrap-input100 validate-input">
-                        <input class="input100 save" type="text" name="me" value="" multiple>
+                        <textarea class="input100 save" type="text" name="me" value="" multiple></textarea>
                         <span class="focus-input100" data-placeholder="Если мы что-то упустили, можете дополнить здесь:"></span>
                       </div>
                     </div>
@@ -307,6 +307,15 @@
 </script>
 
 <script type="text/javascript">
+  var textarea = document.querySelector('textarea');
+
+  textarea.addEventListener('keyup', function(){
+    if(this.scrollTop > 0){
+      this.style.height = "10px"
+      this.style.height = this.scrollHeight + "px";
+    }
+  });
+
   var toggleButton = document.getElementById("toggleButton");
   toggleButton.onclick = function() {
     if(this.checked){
@@ -441,8 +450,9 @@ $(document).ready(function() {
 });
 
 $("body").on("input", ".save", function () {
-  var id = $(this).attr('id')
-    switch (id) {
+  var id = $(this).attr('id');
+  var txtid = id.match(/\D+/);
+    switch (txtid[0]) {
       case "family":
         document.getElementById("previewCustom").contentWindow.document.getElementById("f-response").innerHTML = $(this).val();
         break;
@@ -469,6 +479,66 @@ $("body").on("input", ".save", function () {
         break;
       case "job_salary_period":
         document.getElementById("previewCustom").contentWindow.document.getElementById("salary_period-response").innerHTML = "/"+$(this).val();
+        break;
+      case "type_employ":
+        document.getElementById("previewCustom").contentWindow.document.getElementById("type_employ-response").innerHTML = $(this).val() + ",";
+        break;
+      case "schedule_work":
+        document.getElementById("previewCustom").contentWindow.document.getElementById("schedule_work-response").innerHTML = $(this).val();
+        break;
+      case "companyName":
+        var byId = "companyName-response" + id.match(/\d+/);
+        document.getElementById("previewCustom").contentWindow.document.getElementById(byId).innerHTML = $(this).val();
+        break;
+      case "post":
+        var byId = "pastVacancy-response" + id.match(/\d+/);
+        document.getElementById("previewCustom").contentWindow.document.getElementById(byId).innerHTML = $(this).val();
+        break;
+      case "begin_expOld":
+        var byId = "begMonthTime-response" + id.match(/\d+/);
+        document.getElementById("previewCustom").contentWindow.document.getElementById(byId).innerHTML = $(this).val();
+        break;
+      case "new_year":
+        var byId = "begYearTime-response" + id.match(/\d+/);
+        document.getElementById("previewCustom").contentWindow.document.getElementById(byId).innerHTML = " " + $(this).val();
+        break;
+      case "end_expOld":
+        var byId = "endMonthTime-response" + id.match(/\d+/);
+        document.getElementById("previewCustom").contentWindow.document.getElementById(byId).innerHTML = $(this).val();
+        break;
+      case "end_year":
+        var byId = "endYearTime-response" + id.match(/\d+/);
+        document.getElementById("previewCustom").contentWindow.document.getElementById(byId).innerHTML = " " + $(this).val();
+        break;
+      case "level":
+        var elementById = "level-response" + id.match(/\d+/);
+        document.getElementById("previewCustom").contentWindow.document.getElementById(elementById).innerHTML = $(this).val();
+        break;
+      case "education":
+        var elementById = "education-response" + id.match(/\d+/);
+        document.getElementById("previewCustom").contentWindow.document.getElementById(elementById).innerHTML = $(this).val() + ",";
+        break;
+      case "yearOfGraduation":
+        var elementById = "yearOfGraduation-response" + id.match(/\d+/);
+        document.getElementById("previewCustom").contentWindow.document.getElementById(elementById).innerHTML = $(this).val();
+        break;
+      case "faculty":
+        var elementById = "faculty-response" + id.match(/\d+/);
+        document.getElementById("previewCustom").contentWindow.document.getElementById(elementById).innerHTML = $(this).val() + ",";
+        break;
+      case "specialty":
+        var elementById = "specialty-response" + id.match(/\d+/);
+        document.getElementById("previewCustom").contentWindow.document.getElementById(elementById).innerHTML = $(this).val();
+        break;
+      case "skill":
+        var elementById = "skill-response" + id.match(/\d+/);
+        document.getElementById("previewCustom").contentWindow.document.getElementById("elementById-response").innerHTML = $(this).val();
+        break;
+      case "":
+        document.getElementById("previewCustom").contentWindow.document.getElementById("currency-response").innerHTML = $(this).val();
+        break;
+      case "":
+        document.getElementById("previewCustom").contentWindow.document.getElementById("currency-response").innerHTML = $(this).val();
         break;
       case "":
         document.getElementById("previewCustom").contentWindow.document.getElementById("currency-response").innerHTML = $(this).val();
@@ -570,18 +640,18 @@ function addInputExp(j) {
           '<label for="begin0">Начало работы</label>'+
           '<select class="js-example-placeholder-single input100 save" id="newbegin' + xExp + '" name="begin' + xExp + '">'+
             '<option value=""></option>'+
-            '<option value="Jan">Январь</option>'+
-            '<option value="Feb">Февраль</option>'+
-            '<option value="Mar">Март</option>'+
-            '<option value="Apr">Апрель</option>'+
-            '<option value="May">Май</option>'+
-            '<option value="Jun">Июнь</option>'+
-            '<option value="Jul">Июль</option>'+
-            '<option value="Aug">Август</option>'+
-            '<option value="Sep">Сентябрь</option>'+
-            '<option value="Oct">Октябрь</option>'+
-            '<option value="Nov">Ноябрь</option>'+
-            '<option value="Dec">Декабрь</option>'+
+            '<option value="Январь">Январь</option>'+
+            '<option value="Февраль">Февраль</option>'+
+            '<option value="Март">Март</option>'+
+            '<option value="Апрель">Апрель</option>'+
+            '<option value="Май">Май</option>'+
+            '<option value="Июнь">Июнь</option>'+
+            '<option value="Июль">Июль</option>'+
+            '<option value="Август">Август</option>'+
+            '<option value="Сентябрь">Сентябрь</option>'+
+            '<option value="Октябрь">Октябрь</option>'+
+            '<option value="Ноябрь">Ноябрь</option>'+
+            '<option value="Декабрь">Декабрь</option>'+
           '</select>'+
           '<span class="focus-input100"></span>'+
         '</div>'+
@@ -599,18 +669,18 @@ function addInputExp(j) {
           '<label for="begin' + xExp + '">Окончание работы</label>'+
           '<select class="js-example-placeholder-single input100 save" id="newend' + xExp + '" name="end' + xExp + '">'+
             '<option value=""></option>'+
-            '<option value="Jan">Январь</option>'+
-            '<option value="Feb">Февраль</option>'+
-            '<option value="Mar">Март</option>'+
-            '<option value="Apr">Апрель</option>'+
-            '<option value="May">Май</option>'+
-            '<option value="Jun">Июнь</option>'+
-            '<option value="Jul">Июль</option>'+
-            '<option value="Aug">Август</option>'+
-            '<option value="Sep">Сентябрь</option>'+
-            '<option value="Oct">Октябрь</option>'+
-            '<option value="Nov">Ноябрь</option>'+
-            '<option value="Dec">Декабрь</option>'+
+            '<option value="Январь">Январь</option>'+
+            '<option value="Февраль">Февраль</option>'+
+            '<option value="Март">Март</option>'+
+            '<option value="Апрель">Апрель</option>'+
+            '<option value="Май">Май</option>'+
+            '<option value="Июнь">Июнь</option>'+
+            '<option value="Июль">Июль</option>'+
+            '<option value="Август">Август</option>'+
+            '<option value="Сентябрь">Сентябрь</option>'+
+            '<option value="Октябрь">Октябрь</option>'+
+            '<option value="Ноябрь">Ноябрь</option>'+
+            '<option value="Декабрь">Декабрь</option>'+
           '</select>'+
           '<span class="focus-input100"></span>'+
         '</div>'+
@@ -627,6 +697,20 @@ function addInputExp(j) {
       '</div>'+
     '</div>'+
   '</div>';
+  var strWorkResponse = '<div id="work-response' + xExp + '">'+
+    '<div class="row">'+
+      '<div class="name col-6 col-sm-6 col-md-6 col-xl-5" id="companyName-response' + xExp + '"></div>'+
+      '<div class="col-6 col-sm-6 col-md-6 col-xl-5">'+
+        '<span class="date" id="begMonthTime-response' + xExp + '"></span>'+
+        '<span class="date" id="begYearTime-response' + xExp + '"></span>'+
+        '<span class="date">—</span>'+
+        '<span class="date" id="endMonthTime-response' + xExp + '"></span>'+
+        '<span class="date" id="endYearTime-response' + xExp + '"></span>'+
+      '</div>'+
+    '</div>'+
+    '<div id="pastVacancy-response' + xExp + '"></div>'+
+  '</div>';
+  document.getElementById("previewCustom").contentWindow.document.getElementById("work-response").insertAdjacentHTML('beforeend',strWorkResponse);
   document.getElementById('input_exp').insertAdjacentHTML('beforeend',strWork);
   var new_begin_exp = "newbegin" + xExp ;
   var new_end_exp = "newend" + xExp;
@@ -636,6 +720,7 @@ function addInputExp(j) {
       minimumResultsForSearch: Infinity
     });
     document.getElementById(new_begin_exp).className = "selectOld save input100";
+    document.getElementById(new_end_exp).className = "selectOld save input100";
     arrId[1].push(xExp);
     sessionStorage.setItem("arrId",JSON.stringify(arrId));
   }
@@ -643,6 +728,22 @@ function addInputExp(j) {
   document.getElementById(new_end_exp).classList.add("selectOld" + xExp);
   document.getElementById(new_end_exp).id = "end_expOld" + xExp;
   xExp++;
+}
+function clickCheck(num){
+  var end_year = "end_year" + num;
+  var bane_select = ".selectOld" + num;
+  var nowtime = "nowtime" + num;
+  if(document.getElementById(nowtime).checked){
+    $(bane_select).prop("disabled", true);
+    document.getElementById(end_year).setAttribute("disabled", "disabled");
+    document.getElementById("previewCustom").contentWindow.document.getElementById("endMonthTime-response" + num).innerHTML = "н.";
+    document.getElementById("previewCustom").contentWindow.document.getElementById("endYearTime-response" + num).innerHTML = "в.";
+  }else{
+    $(bane_select).prop("disabled", false);
+    document.getElementById(end_year).removeAttribute("disabled");
+    document.getElementById("previewCustom").contentWindow.document.getElementById("endMonthTime-response" + num).innerHTML = document.getElementById("end_expOld" + num).value;
+    document.getElementById("previewCustom").contentWindow.document.getElementById("endYearTime-response" + num).innerHTML = " " + document.getElementById("end_year" + num).value;
+  }
 }
 
 function addInputEduc(j) {
@@ -697,6 +798,14 @@ function addInputEduc(j) {
   '</div>'+
   '<i class="fas fa-question-circle" style="color:#999999;position: relative;top: 43px;" title="Если вы учитесь в настоящее время, укажите год предполагаемого окончания"></i>'+
   '</div></div>';
+  var strEducResponse = '<div id="educ-response' + (xEduc) + '">'+
+    '<div class="row">'+
+      '<div class="name col-6 col-sm-6 col-md-6 col-xl-5"><span id="education-response' + (xEduc) + '"></span><span id="level-response' + (xEduc) + '"></span></div>'+
+      '<div class="date col-6 col-sm-6 col-md-6 col-xl-5" id="yearOfGraduation-response' + (xEduc) + '"></div>'+
+    '</div>'+
+    '<div> <span id="faculty-response' + (xEduc) + '"></span><span id="specialty-response' + (xEduc) + '"></span></div>'+
+  '</div>';
+  document.getElementById("previewCustom").contentWindow.document.getElementById("educ-response").insertAdjacentHTML('beforeend',strEducResponse);
   document.getElementById('input_education').insertAdjacentHTML('beforeend',strEduc);
   var new_level = "level" + xEduc ;
   if(j==null){
@@ -708,20 +817,7 @@ function addInputEduc(j) {
     arrId[2].push(xEduc);
     sessionStorage.setItem("arrId",JSON.stringify(arrId));
   }
-  document.getElementById(new_level).id = "selectOld" + xEduc;
   xEduc++;
-}
-function clickCheck(num){
-  var end_year = "end_year" + num;
-  var bane_select = ".selectOld" + num;
-  var nowtime = "nowtime" + num;
-  if(document.getElementById(nowtime).checked){
-    $(bane_select).prop("disabled", true);
-    document.getElementById(end_year).setAttribute("disabled", "disabled");
-  }else{
-    $(bane_select).prop("disabled", false);
-    document.getElementById(end_year).removeAttribute("disabled");
-  }
 }
 
 function addInputSkills(j) {
@@ -731,7 +827,7 @@ function addInputSkills(j) {
   var strSkills = '<div class="d-flex mb-4 icon-social" id="input_skills' + xSkills + '">'+
     '<div class="desc-form">'+
       '<div class="wrap-input100 validate-input" style="margin-top: 16px;">  '+
-        '<input class="input100 save" type="text" id="link' + xSkills + '" name="link' + xSkills + '">'+
+        '<input class="input100 save" type="text" id="skill' + xSkills + '" name="skill' + xSkills + '">'+
         '<span class="focus-input100" data-placeholder="Описание навыка"></span>'+
       '</div>'+
     '</div>'+
@@ -878,6 +974,8 @@ function remoteInput(remInput){
       var indexElem=arrId[1].indexOf(parseInt(remInput.match(/\d+/)));
       if (indexElem > -1)
         arrId[1].splice(indexElem,1);
+      var elementById = "work-response" + indexElem;
+      document.getElementById("previewCustom").contentWindow.document.getElementById(elementById).remove();
       break;
     case "input_educ":
       var indexElem=arrId[2].indexOf(parseInt(remInput.match(/\d+/)));

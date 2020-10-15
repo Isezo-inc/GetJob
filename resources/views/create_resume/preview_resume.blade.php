@@ -66,50 +66,32 @@
                 </div>
                 <div class="col-6 col-sm-6 col-md-6 col-xl-5">
                   <b >Занятость:</b>
-                  <span id="employment-response"></span>
-                  <span id="employment-response"></span>
-
+                  <span id="type_employ-response"></span>
+                  <span id="schedule_work-response"></span>
                 </div>
               </div>
             </div>
             <div class="block experiences">
               <h3 class="header">Опыт работы</h3>
-              <div id="work-response">
-                <div class="row">
-                  <div class="name col-6 col-sm-6 col-md-6 col-xl-5">ООО этериал</div>
-                  <div class="date col-6 col-sm-6 col-md-6 col-xl-5">01.2020 — н.в.</div>
-                </div>
-                <div class="">Директор:</div>
-                <div class="pl-4 small"><p>кушать печеньки</p><p>123213 123 12 32123 123</p></div>
-              </div>
+              <div id="work-response"></div>
             </div>
             <div class="block educations">
               <h3 class="header">Образование</h3>
-              <div id="educ-response">
-                <div class="row">
-                  <div class="name col-6 col-sm-6 col-md-6 col-xl-5">Тогу,Бакалавр</div>
-                  <div class="date col-6 col-sm-6 col-md-6 col-xl-5">2020</div>
-                </div>
-                <div class="">ФАИТ, ИС</div>
-              </div>
+              <div id="educ-response"></div>
             </div>
             <div class="block skills">
               <h3 class="header">Профессиональные навыки</h3>
-              <div id="skills-response">
-                <li style="">
-                  <div class="name col-6 col-sm-6 col-md-6 col-xl-5">Езда на одном колесе</div>
-                  <div class="col-6 col-sm-6 col-md-6 col-xl-5">средний</div>
-                </li>
-                <li style="">
-                  <div class="name col-6 col-sm-6 col-md-6 col-xl-5">Езда на одном колесе</div>
-                  <div class="col-6 col-sm-6 col-md-6 col-xl-5">средний</div>
-                </li>
-
+              <div>
+                <li id="skills-response">
+                  <ul id="skills-response0">
+                    <div><span  class="name" id="skill-response0">123</span><span id="rdo-response0">средний</span></div>
+                  </ul>
+                  </li>
               </div>
             </div>
-            <div class="block educations">
-              <h3 class="header">Образование</h3>
-              <div id="educ-response">
+            <div class="block portfolio">
+              <h3 class="header">Портфолио</h3>
+              <div id="portfolio-response">
                 <div class="row">
                   <div class="name col-6 col-sm-6 col-md-6 col-xl-5">Тогу,Бакалавр</div>
                   <div class="date col-6 col-sm-6 col-md-6 col-xl-5">2020</div>
@@ -118,7 +100,7 @@
               </div>
             </div>
             <div class="block educations">
-              <h3 class="header">Образование</h3>
+              <h3 class="header">Курсы повышения квалификации</h3>
               <div id="educ-response">
                 <div class="row">
                   <div class="name col-6 col-sm-6 col-md-6 col-xl-5">Тогу,Бакалавр</div>
@@ -127,12 +109,10 @@
                 <div class="">ФАИТ, ИС</div>
               </div>
             </div>
-            <div class="block educations">
-              <h3 class="header">Образование</h3>
-              <div id="educ-response">
-                <div class="row">
-                  <div class="name col-6 col-sm-6 col-md-6 col-xl-5">Тогу,Бакалавр</div>
-                  <div class="date col-6 col-sm-6 col-md-6 col-xl-5">2020</div>
+            <div class="block me">
+              <h3 class="header">О себе</h3>
+              <div id="me-response">
+                  <div>2020</div>
                 </div>
                 <div class="">ФАИТ, ИС</div>
               </div>
